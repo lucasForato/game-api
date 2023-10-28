@@ -1,0 +1,70 @@
+cmake_minimum_required(VERSION 3.26)
+project(game_api)
+
+set(CMAKE_CXX_STANDARD 14)
+
+include_directories(external/Crow/include)
+include_directories(external/Crow/include/crow)
+include_directories(external/Crow/include/crow/middlewares)
+include_directories(external/Crow/tests)
+include_directories(src)
+
+add_executable(game_api
+        external/Crow/examples/middlewares/example_cookies.cpp
+        external/Crow/examples/middlewares/example_cors.cpp
+        external/Crow/examples/middlewares/example_session.cpp
+        external/Crow/examples/ssl/example_ssl.cpp
+        external/Crow/examples/websocket/example_ws.cpp
+        external/Crow/examples/example.cpp
+        external/Crow/examples/example_blueprint.cpp
+        external/Crow/examples/example_catchall.cpp
+        external/Crow/examples/example_chat.cpp
+        external/Crow/examples/example_compression.cpp
+        external/Crow/examples/example_file_upload.cpp
+        external/Crow/examples/example_json_map.cpp
+        external/Crow/examples/example_middleware.cpp
+        external/Crow/examples/example_static_file.cpp
+        external/Crow/examples/example_vs.cpp
+        external/Crow/examples/example_with_all.cpp
+        external/Crow/examples/helloworld.cpp
+        external/Crow/include/crow/middlewares/cookie_parser.h
+        external/Crow/include/crow/middlewares/cors.h
+        external/Crow/include/crow/middlewares/session.h
+        external/Crow/include/crow/middlewares/utf-8.h
+        external/Crow/include/crow/app.h
+        external/Crow/include/crow/ci_map.h
+        external/Crow/include/crow/common.h
+        external/Crow/include/crow/compression.h
+        external/Crow/include/crow/http_connection.h
+        external/Crow/include/crow/http_parser_merged.h
+        external/Crow/include/crow/http_request.h
+        external/Crow/include/crow/http_response.h
+        external/Crow/include/crow/http_server.h
+        external/Crow/include/crow/json.h
+        external/Crow/include/crow/logging.h
+        external/Crow/include/crow/middleware.h
+        external/Crow/include/crow/middleware_context.h
+        external/Crow/include/crow/mime_types.h
+        external/Crow/include/crow/multipart.h
+        external/Crow/include/crow/mustache.h
+        external/Crow/include/crow/parser.h
+        external/Crow/include/crow/query_string.h
+        external/Crow/include/crow/returnable.h
+        external/Crow/include/crow/routing.h
+        external/Crow/include/crow/settings.h
+        external/Crow/include/crow/socket_adaptors.h
+        external/Crow/include/crow/task_timer.h
+        external/Crow/include/crow/TinySHA1.hpp
+        external/Crow/include/crow/utility.h
+        external/Crow/include/crow/version.h
+        external/Crow/include/crow/websocket.h
+        external/Crow/include/crow.h
+        external/Crow/tests/external_definition/main.cpp
+        external/Crow/tests/multi_file/main.cpp
+        external/Crow/tests/multi_file/secondary.cpp
+        external/Crow/tests/ssl/ssltest.cpp
+        external/Crow/tests/template/mustachetest.cpp
+        external/Crow/tests/catch.hpp
+        external/Crow/tests/unittest.cpp
+        src/main.cpp
+)
