@@ -1,0 +1,8 @@
+# ninja log v5
+7970	8372	1698517554483702749	game_api	3661d2a98f98e0a9
+3	16475	1698517096663700151	CMakeFiles/game_api.dir/external/Crow/examples/middlewares/example_cors.cpp.o	3ece9697652ee16d
+0	16753	1698517096933700170	CMakeFiles/game_api.dir/external/Crow/examples/middlewares/example_cookies.cpp.o	2233c21faadfd909
+0	20	1698517597443703846	build.ninja	c264b076141b455d
+8	17692	1698517097873700237	CMakeFiles/game_api.dir/external/Crow/examples/websocket/example_ws.cpp.o	15b850166e518eb5
+1	7970	1698517554073702749	CMakeFiles/game_api.dir/main.cpp.o	38a00e06caa5136b
+2	17627	1698517097803700232	CMakeFiles/game_api.dir/external/Crow/examples/middlewares/example_session.cpp.o	950c65af47a94ed
